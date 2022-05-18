@@ -1,44 +1,78 @@
-Tianyu:
+"Ding":
+  - firstname: ["Tianyu"]
     url: https://www.tianyuding.com/
 
-Zhihui:
+"Podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+
+"Rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+
+"Bach":
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+
+"Ding":
+  - firstname: ["Tianyu"]
+    url: https://www.tianyuding.com/
+
+"Zhu":
+  - firstname: ["Zhihui"]
     url: http://mysite.du.edu//~zzhu61/index.html
 
-Yifan:
+"Wang":
+  - firstname: ["Yifan"]
     url: https://homes.cs.washington.edu/~yifan1/
 
-Daniel P.:
+"Robinson":
+  - firstname: ["Daniel P."]
     url: https://coral.ise.lehigh.edu/danielprobinson/
 
-Manolis C.:
+"Tsakiris":
+  - firstname: ["Manolis C."]
     url: https://sites.google.com/site/manolisctsakiris/
 
-René:
+"Vidal":
+  - firstname: ["René"]
     url: http://cis.jhu.edu/~rvidal/
 
-Zihan:
+"Zhou":
+  - firstname: ["Zihan"]
     url: https://faculty.ist.psu.edu/zzhou/Home.html
 
-Shenghua:
+"Gao":
+  - firstname: ["Shenghua"]
     url: https://sist.shanghaitech.edu.cn/sist_en/2020/0814/c7582a54772/page.htm
 
-Yi:
+"Ma":
+  - firstname: ["Yi"]
     url: https://people.eecs.berkeley.edu/~yima/
 
-Laurent:
+Kneip:
+  - firstname: ["Laurent"]
     url: http://mpl.sist.shanghaitech.edu.cn/Director.html
 
-Benjamin D.:
+Haeffele:
+  - firstname: ["Benjamin D."]
     url: http://www.cis.jhu.edu/~haeffele/
 
-Kwan Ho Ryan:
+Chan:
+  - firstname: ["Kwan Ho Ryan"]
     url: https://ryanchankh.github.io/
 
-Derek:
+Lim:
+  - firstname: ["Derek"]
     url: https://cptq.github.io/
 
-Christina:
+Baek:
+  - firstname: ["Christina"]
     url: https://kebaek.github.io/
 
-Ziyang:
+Wu:
+  - firstname: ["Ziyang"]
     url: https://robinwu218.github.io/

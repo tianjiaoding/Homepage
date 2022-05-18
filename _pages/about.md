@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-description: >
+subtitle: >
   Ph.D. Student • <a href="http://vision.jhu.edu/" target="_blank">Vision, Dynamics and Learning Lab</a> • <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a> • Email: tding@jhu.edu
 
 profile:
@@ -14,8 +14,6 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-
-<!-- description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc. -->
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

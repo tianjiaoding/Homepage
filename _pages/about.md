@@ -7,7 +7,7 @@ description: >
 
 profile:
   align: right
-  image: EatInLongBeach.jpeg
+  image: Homewood.jpeg
 
 
 news: true  # includes a list of news items

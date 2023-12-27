@@ -1,7 +1,3 @@
-"Ding":
-  - firstname: ["Tianyu"]
-    url: https://www.tianyuding.com/
-
 "Podolsky":
   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
     url: https://en.wikipedia.org/wiki/Boris_Podolsky
@@ -80,3 +76,7 @@ Baek:
 Wu:
   - firstname: ["Ziyang"]
     url: https://robinwu218.github.io/
+
+Tong:
+  - firstname: ["Shengbang"]
+    url: https://tsb0601.github.io/petertongsb/

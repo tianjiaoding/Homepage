@@ -1,0 +1,23 @@
+# The Docker image that will be used to build your app
+image: ruby:3.0
+
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+
+# Functions that should be executed before the build script is run
+before_script:
+  - gem install bundler
+  - bundle install
+pages:
+  script:
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

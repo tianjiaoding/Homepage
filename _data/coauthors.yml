@@ -19,7 +19,7 @@
 
 "Zhu":
   - firstname: ["Zhihui"]
-    url: http://mysite.du.edu//~zzhu61/index.html
+    url: https://zhihuizhu.github.io/
 
 "Wang":
   - firstname: ["Yifan"]
@@ -80,3 +80,12 @@ Wu:
 Tong:
   - firstname: ["Shengbang"]
     url: https://tsb0601.github.io/petertongsb/
+
+Chu:
+  - firstname: ["Tianzhe"]
+    url: https://tianzhechu.com/
+
+Dai:
+  - firstname: ["Xili"]
+    url: https://delay-xili.github.io/
+    

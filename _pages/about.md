@@ -3,11 +3,11 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  Ph.D. Student • <a href="https://research.seas.upenn.edu/initiatives/data-science/" target="_blank">Innovation in Data Engineering and Science (IDEAS)</a> • <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a> • <a href="mailto:tjding@upenn.edu"> Email: tjding@upenn.edu</a>
+  Ph.D. Student • <a href="https://ideas.seas.upenn.edu/" target="_blank">Innovation in Data Engineering and Science (IDEAS)</a> • <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a> • <a href="mailto:tjding@upenn.edu"> Email: tjding@upenn.edu</a>
 
 profile:
   align: right
-  image: Homewood.jpeg
+  image: HeadShotSemiFormal.jpg
 
 
 news: true  # includes a list of news items
@@ -23,7 +23,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
   <!-- Ph.D. Student • <a href="http://vision.jhu.edu/" target="_blank">Vision, Dynamics and Learning Lab</a> • <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a> • <a href="mailto:tjding@upenn.edu"> Email: tjding@upenn.edu</a> -->
 
-I am a fourth-year PhD student at [University of Pennsylvania](https://www.upenn.edu/){:target="\_blank"}, advised by [René Vidal](http://cis.jhu.edu/~rvidal/){:target="\_blank"}. I work closely with [Benjamin D. Haeffele](https://www.cis.jhu.edu/~haeffele/){:target="\_blank"} and [Yi Ma](http://people.eecs.berkeley.edu/~yima/){:target="\_blank"}. Prior to my PhD, I spent two years as a research assistant at [ShanghaiTech University](https://sist.shanghaitech.edu.cn/sist_en/){:target="\_blank"}, advised by [Manolis C. Tsakiris](https://sites.google.com/site/manolisctsakiris/){:target="\_blank"} and collaborating with [Laurent Kneip](https://laurentkneip.com/){:target="\_blank"}. I received a master's degree in applied mathematics and statistics from [Johns Hopkins University](https://www.jhu.edu/){:target="\_blank"}, and a bachelor's in computer science with honor from [ShanghaiTech](https://sist.shanghaitech.edu.cn/sist_en/){:target="\_blank"}.
+I am a PhD student at [University of Pennsylvania](https://www.upenn.edu/){:target="\_blank"}, advised by [René Vidal](http://cis.jhu.edu/~rvidal/){:target="\_blank"}. I work closely with [Benjamin D. Haeffele](https://www.cis.jhu.edu/~haeffele/){:target="\_blank"} and [Yi Ma](http://people.eecs.berkeley.edu/~yima/){:target="\_blank"}. Prior to my PhD, I spent two years as a research assistant at [ShanghaiTech University](https://sist.shanghaitech.edu.cn/sist_en/){:target="\_blank"}, advised by [Manolis C. Tsakiris](https://sites.google.com/site/manolisctsakiris/){:target="\_blank"} and collaborating with [Laurent Kneip](https://laurentkneip.com/){:target="\_blank"}. I received a master's degree in applied mathematics and statistics from [Johns Hopkins University](https://www.jhu.edu/){:target="\_blank"}, and a bachelor's in computer science with honor from [ShanghaiTech](https://sist.shanghaitech.edu.cn/sist_en/){:target="\_blank"}.
 
 My research interests lie in the theoretical foundations of machine learning and data science as well as emerging applications. As such, I develop both rigorous mathematics and practical implementations in my work. In particular, I study manifold learning and clustering, 3D vision and robotics.
 

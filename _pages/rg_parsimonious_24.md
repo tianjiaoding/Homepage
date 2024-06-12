@@ -28,7 +28,7 @@ In general we meet on Mondays, 4:00-5:00 PM. We are happy to adapt to conflicts 
   </tr>
   <tr>
     <td>June 3</td>
-    <td><a href="https://www.kylepoe.info/blog/">Kyle Poe</a></td>
+    <td><a href="https://scholar.google.com/citations?user=9mki29cAAAAJ&hl=en&oi=ao">Kyle Poe</a></td>
     <td>Compressed sensing/sparse recovery on subspace arrangements</td>
     <td></td>
   </tr>

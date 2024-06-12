@@ -32,3 +32,80 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"ding":
+  - firstname: ["Tianyu"]
+    url: https://www.tianyuding.com/
+
+"zhu":
+  - firstname: ["Zhihui"]
+    url: https://zhihuizhu.github.io/
+
+"wang":
+  - firstname: ["Yifan"]
+    url: https://homes.cs.washington.edu/~yifan1/
+
+"robinson":
+  - firstname: ["Daniel P."]
+    url: https://coral.ise.lehigh.edu/danielprobinson/
+
+"tsakiris":
+  - firstname: ["Manolis C."]
+    url: https://sites.google.com/site/manolisctsakiris/
+
+"vidal":
+  - firstname: ["René"]
+    url: http://cis.jhu.edu/~rvidal/
+
+"zhou":
+  - firstname: ["Zihan"]
+    url: https://zihan-z.github.io/
+
+"gao":
+  - firstname: ["Shenghua"]
+    url: https://sist.shanghaitech.edu.cn/sist_en/2020/0814/c7582a54772/page.htm
+
+"ma":
+  - firstname: ["Yi"]
+    url: https://people.eecs.berkeley.edu/~yima/
+
+"kneip":
+  - firstname: ["Laurent"]
+    url: http://mpl.sist.shanghaitech.edu.cn/Director.html
+
+"haeffele":
+  - firstname: ["Benjamin D."]
+    url: http://www.cis.jhu.edu/~haeffele/
+
+"chan":
+  - firstname: ["Kwan Ho Ryan"]
+    url: https://ryanchankh.github.io/
+
+"lim":
+  - firstname: ["Derek"]
+    url: https://cptq.github.io/
+
+"peng":
+  - firstname: ["Liangzu"]
+    url: https://www.liangzu.org/
+
+"baek":
+  - firstname: ["Christina"]
+    url: https://kebaek.github.io/
+
+"wu":
+  - firstname: ["Ziyang"]
+    url: https://robinwu218.github.io/
+
+"tong":
+  - firstname: ["Shengbang"]
+    url: https://tsb0601.github.io/petertongsb/
+
+"chu":
+  - firstname: ["Tianzhe"]
+    url: https://tianzhechu.com/
+
+"dai":
+  - firstname: ["Xili"]
+    url: https://delay-xili.github.io/
+    

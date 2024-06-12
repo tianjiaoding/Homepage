@@ -11,6 +11,10 @@
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
+      {% if site.enable_footer_social %}
+        <!-- Social Icons -->
+        <div class="navbar-brand social">{% include social.liquid %}</div>
+      {% endif %}
     </div>
   </footer>
 {% else %}
@@ -29,6 +33,10 @@
       {% endif %}
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+      {% endif %}
+      {% if site.enable_footer_social %}
+        <!-- Social Icons -->
+        <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
     </div>
   </footer>

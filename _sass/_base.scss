@@ -132,6 +132,18 @@ blockquote {
   }
 }
 
+// Margins below blocks
+.clearfix {
+  margin-bottom: 1rem;
+}
+
+.news {
+  margin-bottom: 1rem;
+  table td {
+    font-weight: normal;
+  }
+}
+
 // Checklist
 
 ul.task-list {
@@ -162,6 +174,20 @@ ul.task-list input[type="checkbox"] {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+// Subtitle 
+
+.desc {
+  margin-bottom: 2rem;
+  font-size: 0.99rem;
+  a {
+    color: inherit;
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
 }
 
 // Card
@@ -208,16 +234,16 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 1.1rem;
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 1.1rem;
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 23%;
 
     .address {
       p {
@@ -756,21 +782,23 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 600;
       }
 
       .author {
+        color: $grey-color;
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          color: inherit;
+          // border-bottom: 1px dashed var(--global-theme-color);
 
-          &:hover {
-            border-bottom-style: solid;
-            text-decoration: none;
-          }
+          // &:hover {
+          //   border-bottom-style: solid;
+          //   text-decoration: none;
+          // }
         }
 
         > em {
-          border-bottom: 1px solid;
+          // border-bottom: 1px solid;
           font-style: normal;
         }
 
@@ -789,12 +817,14 @@ footer.sticky-bottom {
       .links {
         a.btn {
           color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          border: 2px solid var(--global-text-color);
+          border-radius: 1rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          text-transform: unset !important;
 
           &:hover {
             color: var(--global-theme-color);

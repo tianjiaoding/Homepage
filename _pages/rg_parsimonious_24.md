@@ -17,7 +17,6 @@ The first few meetings will review basic ideas from compressed sensing, dictiona
 ### Logistics
 In general we meet on Mondays, 4:00-5:00 PM. We are happy to adapt to conflicts in advance. So far we have tried various conference rooms, but the place is still oscillating. Stay tuned!
 
-<!-- add a title: as teaching assistant -->
 ### Schedule
 <table class="table table-striped">
   <tr>

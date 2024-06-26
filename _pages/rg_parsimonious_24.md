@@ -32,25 +32,19 @@ In general we meet on Mondays, 4:00-5:00 PM. We are happy to adapt to conflicts 
     <td></td>
   </tr>
   <tr>
-    <td>TBD</td>
+    <td>June 24</td>
     <td>Tianjiao Ding</td>
     <td>A tale of two problems: sparse signal recovery and sparse subspace clustering</td>
     <td></td>
   </tr>
   <tr>
-    <td>June 17</td>
-    <td></td>
-    <td>Break: multiple participants taking PTO.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>June 24</td>
+    <td>July 1</td>
     <td><a href="https://scholar.google.com/citations?user=hcKJ0BIAAAAJ&hl=en">Ziqing Xu</a></td>
     <td>Optimization for low-rank matrix factorization problem</td>
     <td></td>
   </tr>
   <tr>
-    <td>July 1</td>
+    <td>July 8</td>
     <td></td>
     <td></td>
     <td></td>

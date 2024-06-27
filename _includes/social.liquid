@@ -73,7 +73,7 @@
     {% when 'unsplash_id' %}
       <a href="https://unsplash.com/@{{ social[1] }}" title="Unsplash"><i class="fa-brands fa-unsplash"></i></a>
     {% when 'wechat_qr' %}
-      <a id="WeChatBtn" title="WeChat"><i class="fa-brands fa-weixin"></i></a>
+      <a id="WeChatBtn" title="WeChat" href="#"><i class="fa-brands fa-weixin"></i></a>
       <div id="WeChatMod" class="wechat-modal">
         <img src="{{ social[1] | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
       </div>

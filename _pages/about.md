@@ -29,4 +29,4 @@ I am a PhD student at [University of Pennsylvania](https://www.upenn.edu/){:targ
 
 My research interests lie in the theoretical foundations of machine learning and data science as well as emerging applications. As such, I develop both rigorous mathematics and practical implementations in my work. In particular, I study manifold learning and clustering, 3D vision and robotics.
 
-I love to [chat about research, life, and fun](https://calendly.com/tianjiao){:target="\_blank"}. If you are a student interested in doing research with me, please email me with your CV and transcript. For master's students and undergraduates, the recommended time investment is at least 15 hours per week.
+I love to [chat about research, life, and fun](https://calendar.app.google/nvvmk8SyRUcHKMvg9){:target="\_blank"}. If you are a student interested in doing research with me, please email me with your CV and transcript. For master's students and undergraduates, the recommended time investment is at least 15 hours per week.

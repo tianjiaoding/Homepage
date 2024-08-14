@@ -18,6 +18,12 @@ pretty_table: true
     <th>Institution</th>
   </tr>
   <tr>
+    <td>ESE 6450 Deep Generative Models</td>
+    <td>René Vidal</td>
+    <td>Fall 2024</td>
+    <td>UPenn</td>
+  </tr>
+  <tr>
     <td>SI132 Linear Algebra and Applications</td>
     <td>Manolis C. Tsakiris</td>
     <td>Spring 2020</td>

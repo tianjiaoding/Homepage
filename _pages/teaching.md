@@ -18,25 +18,25 @@ pretty_table: true
     <th>Institution</th>
   </tr>
   <tr>
-    <td>ESE 6450 Deep Generative Models</td>
+    <td><a href="https://vidal-lab.github.io/dgm/">ESE 6450 Deep Generative Models</a></td>
     <td>René Vidal</td>
     <td>Fall 2024</td>
     <td>UPenn</td>
   </tr>
   <tr>
-    <td>SI132 Linear Algebra and Applications</td>
+    <td><a href="https://drive.google.com/file/d/1BO_3EupVeeKIZlrF3Wnz0vuIMIoJQMtV/view?usp=sharing">SI 132 Linear Algebra and Applications</a></td>
     <td>Manolis C. Tsakiris</td>
     <td>Spring 2020</td>
     <td>ShanghaiTech</td>
   </tr>
   <tr>
-    <td>SI232 Subspace Learning</td>
+    <td>SI 232 Subspace Learning</td>
     <td>Manolis C. Tsakiris</td>
     <td>Fall 2019</td>
     <td>ShanghaiTech</td>
   </tr>
   <tr>
-    <td>SI231 Matrix Analysis</td>
+    <td>SI 231 Matrix Analysis</td>
     <td>Manolis C. Tsakiris</td>
     <td>Fall 2018</td>
     <td>ShanghaiTech</td>

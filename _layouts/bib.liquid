@@ -85,10 +85,7 @@
         {%- if author_is_self -%}
           <em>
             {{- author.first | slice: 0, 1 }}
-            {{- author.last | slice: 0, 1 -}}
-            {%- if author.last contains '*' -%}
-             *
-            {%- endif -%}
+            {{- author.last | slice: 0, 1 }}{{- author_last_html | remove_first: author_last_name -}}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}

@@ -46,7 +46,8 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  {% comment %} <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}"> {% endcomment %}
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}" {% if entry.tags %}tags="{{ entry.tags }}"{% endif %}>
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->

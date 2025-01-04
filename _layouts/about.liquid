@@ -61,6 +61,49 @@ layout: default
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Papers</a>
       </h2>
+      <!-- Begin: filter buttons -->
+      <div class="container mt-4 mb-4">
+        <!-- First row -->
+        <div class="row mb-2">
+          <div class="col">
+            <div class="d-flex flex-wrap gap-2">
+              <button type="button" class="btn btn-primary publication-filter-btn" onclick="filterPublications('all')">
+                Show All
+              </button>
+              <button type="button" class="btn btn-info publication-filter-btn" onclick="filterPublications('trustworthy-ml')">
+                Trustworthy ML
+              </button>
+              <button type="button" class="btn btn-info publication-filter-btn" onclick="filterPublications('unsupervised-ml')">
+                Unsupervised ML
+              </button>
+              <button type="button" class="btn btn-info publication-filter-btn" onclick="filterPublications('efficient-ml')">
+                Efficient ML
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Second row -->
+        <div class="row">
+          <div class="col">
+            <div class="d-flex flex-wrap gap-2">
+              <button type="button" class="btn btn-info publication-filter-btn" onclick="filterPublications('optimization')">
+                Optimization / Theory
+              </button>
+              <button type="button" class="btn btn-info publication-filter-btn" onclick="filterPublications('geometric-vision')">
+                Geometric Vision
+              </button>
+              <button type="button" class="btn btn-info publication-filter-btn" onclick="filterPublications('representation-learning')">
+                Representation Learning
+              </button>
+              <button type="button" class="btn btn-info publication-filter-btn" onclick="filterPublications('foundation-models')">
+                Foundation Models
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script defer src="{{ '/assets/js/filter_publications.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+      <!-- End: filter buttons -->
       {% include selected_papers.liquid %}
     {% endif %}
 

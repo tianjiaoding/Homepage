@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-papers",
-          title: "Papers",
-          description: "publications in reversed chronological order",
+  },{id: "nav-updates",
+          title: "Updates",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/papers/";
+            window.location.href = "/news/";
           },
         },{id: "nav-cv",
           title: "CV",
@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-reading-group",
-          title: "Reading Group",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/parsimonious-structural-learning/";
-          },
         },{id: "nav-teaching",
           title: "Teaching",
           description: "“In learning you will teach, and in teaching you will learn.” – Phil Collins",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-service",
+          title: "Service",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/service/";
           },
         },{id: "post-a-post-with-image-galleries",
       
@@ -424,6 +424,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-one-paper-accepted-to-iclr-24-vienna",
           title: 'One paper accepted to ICLR ‘24 (Vienna)!',
+          description: "",
+          section: "News",},{id: "news-two-papers-accepted-to-neurips-24-vancouver",
+          title: 'Two papers accepted to NeurIPS ‘24 (Vancouver)!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

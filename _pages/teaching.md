@@ -44,4 +44,4 @@ pretty_table: true
 </table>
 
 ### As Private Tutor
-In a past life, I have also worked as a private tutor for high school students in mathematics, physics, and computer science. In particular, I have tutored students at Shanghai American School (SAS) for AP Calculus AB / BC, AP Physics 1 / 2, and AP Computer Science. 
+In a past life, I have also worked as a private tutor for high school students in mathematics, physics, and computer science. In particular, I have tutored students at [Shanghai American School](https://www.saschina.org) for Advanced Placement courses and exams including calculus, physics, and computer science. I have also taught math and physics of the Chinese College Entrance Exam.

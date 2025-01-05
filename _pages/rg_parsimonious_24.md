@@ -3,7 +3,7 @@ layout: default
 permalink: /parsimonious-structural-learning/
 title: Reading Group
 description: 
-nav: true
+nav: false
 nav_order: 6
 pretty_table: true
 ---

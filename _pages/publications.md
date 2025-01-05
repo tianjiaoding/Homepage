@@ -3,7 +3,7 @@ layout: page
 permalink: /papers/
 title: Papers
 description: publications in reversed chronological order
-nav: true
+nav: false
 nav_order: 2
 ---
 

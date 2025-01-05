@@ -30,7 +30,7 @@ Hi there! I am a PhD student at [University of Pennsylvania](https://www.upenn.e
 <!-- My research interests lie in the theoretical foundations of machine learning and data science as well as emerging applications. As such, I aim to develop both rigorous mathematics and practical implementations in my work. In particular, my recent work can be categorized into: 1) geometric 3D vision 2) manifold clustering 3) sparse representation learning for foundation models 4) trustworthy AI. -->
 <!-- ## Research -->
 
-My research interest centers on theoretical foundations of machine learning and emerging applications. On one hand, I use mathematics to **understand when and why existing empirical paradigms work**. On the other hand, these insights allow me to **develop practical algorithms that are more robust, trustworthy, and efficient**. As such, my work typically involves theory, controlled simulations, and large-scale applications. 
+My research interests center on theoretical foundations of machine learning and emerging applications. On one hand, I use mathematics to **understand when and why existing empirical paradigms work**. On the other hand, these insights allow me to **develop practical algorithms that are more robust, trustworthy, and efficient**. As such, my work typically involves theory, controlled simulations, and large-scale applications. 
 
 You can view [my CV](/cv/) for project highlights, or [papers clustered by keywords](#papers-section).
 

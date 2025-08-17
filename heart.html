@@ -1,0 +1,232 @@
+---
+permalink: /heart.html
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heart</title>
+  <style>
+    :root {
+      --heart-size: min(70vmin, 720px);
+      --background-color: #ffffff;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--background-color);
+    }
+    body { cursor: none; }
+    .page {
+      height: 100%;
+      display: grid;
+      place-items: center;
+    }
+    .heart {
+      width: var(--heart-size);
+      height: var(--heart-size);
+      display: block;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.12));
+      animation: beat 1.6s ease-in-out infinite;
+    }
+    @keyframes beat {
+      0%, 60%, 100% { transform: scale(1); }
+      30% { transform: scale(1.08); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .heart { animation: none; }
+    }
+
+    /* Labels inside the heart */
+    .label { 
+      font: 700 12px/1.1 ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      fill: #ffffff;
+      paint-order: stroke;
+      stroke: rgba(0,0,0,0.25);
+      stroke-width: 0.8;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* Hammer that replaces the cursor */
+    #hammer {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 80px;
+      pointer-events: none;
+      transform-origin: 60% 20%;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+    }
+    #hammer.smash {
+      animation: smash 180ms ease-out;
+    }
+    @keyframes smash {
+      0% { transform: translate(var(--x, 0), var(--y, 0)) rotate(-25deg) scale(1); }
+      60% { transform: translate(var(--x, 0), var(--y, 0)) rotate(10deg) scale(0.98); }
+      100% { transform: translate(var(--x, 0), var(--y, 0)) rotate(-25deg) scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #hammer.smash { animation: none; }
+    }
+  </style>
+  <meta name="description" content="A big heart" />
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex" />
+</head>
+<body>
+  <main class="page">
+    <svg class="heart" viewBox="0 0 100 100" role="img" aria-label="Heart">
+      <defs>
+        <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff6b6b" />
+          <stop offset="100%" stop-color="#e63946" />
+        </linearGradient>
+      </defs>
+      <path id="heartPath" fill="url(#g)" d="M50 15C43 5 31 0 21 3 9 6 0 17 0 34c0 30 40 50 50 58 10-8 50-28 50-58 0-17-9-28-21-31-10-3-22 2-29 12Z"/>
+      <g id="labels">
+        <text id="tj" class="label" x="60" y="48">TJ</text>
+        <text id="je" class="label" x="42" y="60">JE</text>
+      </g>
+    </svg>
+  </main>
+
+  <!-- Hammer cursor overlay -->
+  <svg id="hammer" viewBox="0 0 100 100" aria-hidden="true">
+    <defs>
+      <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#cfd8dc"/>
+        <stop offset="100%" stop-color="#90a4ae"/>
+      </linearGradient>
+      <linearGradient id="wood" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#b08968"/>
+        <stop offset="100%" stop-color="#7f5539"/>
+      </linearGradient>
+    </defs>
+    <!-- handle -->
+    <rect x="46" y="28" width="8" height="60" rx="3" fill="url(#wood)"/>
+    <!-- head -->
+    <path fill="url(#metal)" d="M30 20 h44 a4 4 0 0 1 4 4 v8 a4 4 0 0 1 -4 4 h-44 a4 4 0 0 1 -4 -4 v-8 a4 4 0 0 1 4 -4 z"/>
+    <!-- claw suggestion -->
+    <path fill="#78909c" d="M68 20 h10 a4 4 0 0 1 4 4 v8 a4 4 0 0 1 -4 4 h-6 c3-3 5-6 0-8 -3-1 -4-4 0-8z" opacity=".6"/>
+  </svg>
+
+  <script>
+    (function() {
+      const svg = document.querySelector('svg.heart');
+      const heartPath = document.getElementById('heartPath');
+      const tj = document.getElementById('tj');
+      const je = document.getElementById('je');
+      const hammer = document.getElementById('hammer');
+
+      const viewBox = svg.viewBox.baseVal; // 0 0 100 100
+      const repelRadius = 20; // in viewBox units
+      const repelStrength = 2.1; // speed scale (higher = faster escape)
+      const friction = 0.92;
+
+      const center = { x: 50, y: 50 };
+      let mouse = { x: 50, y: 50 };
+      let tjPos = { x: parseFloat(tj.getAttribute('x')), y: parseFloat(tj.getAttribute('y')) };
+      let tjVel = { x: 0, y: 0 };
+
+      function clientToSvg(clientX, clientY) {
+        const rect = svg.getBoundingClientRect();
+        const x = (clientX - rect.left) / rect.width * viewBox.width + viewBox.x;
+        const y = (clientY - rect.top) / rect.height * viewBox.height + viewBox.y;
+        return { x, y };
+      }
+
+      function isInsideHeart(p) {
+        if (typeof heartPath.isPointInFill === 'function') {
+          const pt = new DOMPoint(p.x, p.y);
+          return heartPath.isPointInFill(pt);
+        }
+        // Fallback: contain within a circle centered at (50,55) radius 36 (rough fit)
+        const dx = p.x - 50, dy = p.y - 55;
+        return (dx*dx + dy*dy) <= 36*36;
+      }
+
+      function keepInsideHeart(p) {
+        // If outside, pull back towards center until inside or step is tiny
+        if (isInsideHeart(p)) return p;
+        let attempt = { x: p.x, y: p.y };
+        let step = 1.0;
+        for (let i = 0; i < 16; i++) {
+          attempt.x = center.x + (p.x - center.x) * (1 - step);
+          attempt.y = center.y + (p.y - center.y) * (1 - step);
+          if (isInsideHeart(attempt)) return attempt;
+          step *= 0.5;
+        }
+        return { x: center.x, y: center.y };
+      }
+
+      function animate() {
+        // Repel TJ from hammer
+        const dx = tjPos.x - mouse.x;
+        const dy = tjPos.y - mouse.y;
+        const dist = Math.hypot(dx, dy) || 0.0001;
+        if (dist < repelRadius) {
+          const force = (1 - dist / repelRadius) * repelStrength;
+          tjVel.x += (dx / dist) * force;
+          tjVel.y += (dy / dist) * force;
+        }
+        // Dampen velocity
+        tjVel.x *= friction;
+        tjVel.y *= friction;
+        // Integrate position
+        let next = { x: tjPos.x + tjVel.x, y: tjPos.y + tjVel.y };
+        next = keepInsideHeart(next);
+        // If clamped heavily, invert some velocity to avoid sticking
+        if (Math.abs(next.x - tjPos.x - tjVel.x) > 0.5 || Math.abs(next.y - tjPos.y - tjVel.y) > 0.5) {
+          tjVel.x *= -0.4;
+          tjVel.y *= -0.4;
+        }
+        tjPos = next;
+        tj.setAttribute('x', tjPos.x.toFixed(2));
+        tj.setAttribute('y', tjPos.y.toFixed(2));
+
+        requestAnimationFrame(animate);
+      }
+
+      function moveHammer(e) {
+        const { clientX, clientY } = (e.touches && e.touches[0]) || e;
+        const p = clientToSvg(clientX, clientY);
+        mouse = p;
+        // Move overlay hammer in CSS pixel space
+        const x = clientX - 12; // slight offset so the head leads the pointer
+        const y = clientY - 12;
+        hammer.style.setProperty('--x', x + 'px');
+        hammer.style.setProperty('--y', y + 'px');
+        hammer.style.transform = `translate(${x}px, ${y}px) rotate(-25deg)`;
+      }
+
+      function smashOnce() {
+        // Robustly restart the animation
+        hammer.classList.remove('smash');
+        hammer.style.animation = 'none';
+        requestAnimationFrame(() => {
+          hammer.style.animation = '';
+          hammer.classList.add('smash');
+        });
+      }
+
+      // Ensure class is cleared after animation completes
+      hammer.addEventListener('animationend', () => {
+        hammer.classList.remove('smash');
+      });
+
+      window.addEventListener('pointermove', moveHammer, { passive: true });
+      window.addEventListener('pointerdown', smashOnce, { passive: true });
+      window.addEventListener('touchstart', (e) => { moveHammer(e); smashOnce(); }, { passive: true });
+
+      // Start loop
+      requestAnimationFrame(animate);
+    })();
+  </script>
+</body>
+</html>
+

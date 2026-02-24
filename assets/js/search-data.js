@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "“In learning you will teach, and in teaching you will learn.” – Phil Collins",
+          description: "“What I cannot create, I do not understand.” – Richard Feynman",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -427,6 +427,12 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-two-papers-accepted-to-neurips-24-vancouver",
           title: 'Two papers accepted to NeurIPS ‘24 (Vancouver)!',
+          description: "",
+          section: "News",},{id: "news-one-paper-accepted-to-iclr-25-as-a-spotlight-paper",
+          title: 'One paper accepted to ICLR ‘25 as a Spotlight paper!',
+          description: "",
+          section: "News",},{id: "news-i-am-honored-to-receive-the-penn-ai-fellowship-and-cpal-rising-stars-award",
+          title: 'I am honored to receive the Penn AI Fellowship and CPAL Rising Stars...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

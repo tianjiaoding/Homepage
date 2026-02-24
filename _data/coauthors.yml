@@ -43,7 +43,10 @@
 
 "wang":
   - firstname: ["Yifan"]
-    url: https://homes.cs.washington.edu/~yifan1/
+    url: https://yifanwang.cc/
+
+  - firstname: ["Zhangyang"]
+    url: https://www.vita-group.space/pi
 
 "robinson":
   - firstname: ["Daniel P."]
@@ -140,3 +143,11 @@
 "min":
   - firstname: ["Hancheng"]
     url: https://hanchmin.github.io/
+
+"balzano":
+  - firstname: ["Laura"]
+    url: https://web.eecs.umich.edu/~girasole/
+
+"qu":
+  - firstname: ["Qing"]
+    url: https://qingqu.engin.umich.edu/

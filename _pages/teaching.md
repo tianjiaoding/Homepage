@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: “In learning you will teach, and in teaching you will learn.” – Phil Collins
+description: “What I cannot create, I do not understand.” – Richard Feynman
 nav: true
 nav_order: 6
 pretty_table: true
@@ -16,6 +16,12 @@ pretty_table: true
     <th>Instructor (Professor)</th>
     <th>Time</th>
     <th>Institution</th>
+  </tr>
+  <tr>
+    <td><a href="https://vidal-lab.github.io/dgm/">ESE 6450 Deep Generative Models</a></td>
+    <td>René Vidal</td>
+    <td>Fall 2025</td>
+    <td>UPenn</td>
   </tr>
   <tr>
     <td><a href="https://vidal-lab.github.io/dgm/">ESE 6450 Deep Generative Models</a></td>

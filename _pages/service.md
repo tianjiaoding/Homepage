@@ -15,6 +15,11 @@ pretty_table: true
     <th>Year</th>
   </tr>
   <tr>
+    <td>Coordinator</td>
+    <td>PennAI Symposium, University of Pennsylvania</td>
+    <td>2025</td>
+  </tr>
+  <tr>
     <td>Program Committee</td>
     <td>Annual AAAI Conference on Artificial Intelligence (AAAI)</td>
     <td>2025</td>
